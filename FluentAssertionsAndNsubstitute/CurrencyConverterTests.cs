@@ -56,7 +56,6 @@ public class CurrencyConverterTests
         var result = () => _sut.ConvertEuroToFrancs(0);
 
         // Verify
-        // TODO: verify con assert
         result
             .Should()
             .ThrowExactly<Exception>("0 is an invalid rate")

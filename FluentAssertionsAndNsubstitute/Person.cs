@@ -2,9 +2,14 @@ namespace FluentAssertionsAndNSubstitute;
 
 public record Person
 {
-    public IList<Person> Parents { get; init; } = new List<Person>();
+    public IList<Address> Addresses { get; init; } = new List<Address>();
     public required string Id { get; init; }
     public required string Name { get; init; }
+}
+
+public record Address
+{
+    public required string City { get; init; }
 }
 
 public class Repository
